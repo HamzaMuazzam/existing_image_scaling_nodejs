@@ -37,7 +37,7 @@ app.get('/resize-image', async (req, res, next) => {
 })
 
 app.get("/api", (req, res) => {
-    const {name} = req.body;
+    const {name} = req.query;
     res.json(`Hello there ${name}!`);
 });
 
